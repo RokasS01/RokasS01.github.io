@@ -131,3 +131,59 @@
     transform: scale(1);
     margin-left: 10px;
 }
+
+/**/
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper .static-txt{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts{
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: rgb(109, 189, 255);
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    line-height: 80px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    height: 100%;
+    width: 100%;
+    background: var(--fondlight);
+    border-left: 2px solid rgb(109, 189, 255);
+    animation: typing 3s steps(10) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }

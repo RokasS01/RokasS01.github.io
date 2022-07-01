@@ -523,6 +523,9 @@ form .action{
 @media (max-width: 480px){
   form .half{
     flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
   }
   form .half .item{
     width: 100%;
@@ -535,8 +538,20 @@ form .action{
     margin-bottom: 10px;
     width: 100%;
   }
+  .container-2 form .action input {
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 0;
+  }
 }
 
 #message, #email, #name {
   color: var(--ecriture);
+}
+
+@media (max-width: 485px) {
+  .container-2  form .title h2{
+    letter-spacing: 3px;
+    font-size: 1rem;
+  }
 }
