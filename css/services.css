@@ -246,7 +246,7 @@
   align-items: center;
 }
 
-.container-top-2 .scrolldown {
+.container-top-2 .scrollup {
   cursor: pointer;
   display: block;
   --sizeX: 30px;
@@ -263,7 +263,7 @@
   
 }
 
-.container-top-2 .scrolldown::before {
+.container-top-2 .scrollup::before {
   content: "";
   position: absolute;
   bottom: 30px;
@@ -339,12 +339,12 @@
   height: 400px;
   background-color: var(--fonddark);
 
-  box-shadow: 0 -51px 23px rgba(24, 26, 30, 0.7),
-  0 51px 23px rgba(24, 26, 30, 0.7);
--webkit-box-shadow:  0 -51px 23px rgba(24, 26, 30, 0.7),
-           0 51px 23px rgba(24, 26, 30, 0.7);
-  -moz-box-shadow:  0 -51px 23px rgba(24, 26, 30, 0.7),
-        0 51px 23px rgba(24, 26, 30, 0.7);
+  box-shadow: 0 -81px 33px rgba(24, 26, 30, 0.7),
+              0 81px 33px rgba(24, 26, 30, 0.7);
+  -webkit-box-shadow:  0 -81px 33px rgba(24, 26, 30, 0.7),
+                       0 81px 33px rgba(24, 26, 30, 0.7);
+  -moz-box-shadow:  0 -81px 33px rgba(24, 26, 30, 0.7),
+                    0 81px 33px rgba(24, 26, 30, 0.7);
 }
 
 .container-expertise .test {

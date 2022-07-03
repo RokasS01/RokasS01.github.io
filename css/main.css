@@ -167,7 +167,7 @@ a:active {
     width: 50px;
 }
     
-.header .logo label {
+.header .logo .labelNav {
     position: absolute;
     width: 100%;
     height: 30px;
@@ -253,8 +253,8 @@ a:active {
     color: var(--test);
 }
 
-label #btn,
-label #cancel {
+.labelNav #btn,
+.labelNav #cancel {
     color: var(--test);
     font-size: 30px;
     float: right;
@@ -269,7 +269,7 @@ label #cancel {
 }
 
 @media (max-width: 860px) {
-    label #btn {
+    .labelNav #btn {
         display: block;
     }
 
@@ -311,10 +311,10 @@ label #cancel {
     #check:checked~.headul {
         left: 0;
     }
-    #check:checked~label #btn {
+    #check:checked~.labelNav #btn {
         display: none;
     }
-    #check:checked~label #cancel {
+    #check:checked~.labelNav #cancel {
         display: block;
     }
 }

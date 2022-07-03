@@ -7,6 +7,10 @@ $(document).ready(function() {
     });
 });
 
+function goTOP() {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
 var swiper = new Swiper(".product-slider", {
     loop: true,
     spaceBetween: 0,
